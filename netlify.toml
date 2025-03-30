@@ -1,0 +1,7 @@
+[build]
+  publish = "public"
+  command = "composer install && php artisan optimize && npm install && npm run build"
+
+[context.production.environment]
+  PHP_VERSION = "8.2"
+  NODE_VERSION = "18"
